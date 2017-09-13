@@ -13,7 +13,7 @@ def index():
 
     url = "http://www.espn.com/nfl/statistics/team/_/stat/total/year/2017"
     page = urlopen(url)
-    soup = BeautifulSoup(page.read())
+    soup = BeautifulSoup(page.read(), "html.parser")
 
 
     topContainer = soup.find(id='my-teams-table')
@@ -56,5 +56,7 @@ def index():
     results = {}
     results["Brian"] = sum(bTeams)
     results["Sam"] = sum(sTeams)
+
+    print results
     return render_template("index.html", rows=results)
 
