@@ -7,7 +7,7 @@ import urllib2
 
 @app.route('/')
 def index():
-	return render_template("index.html")
+
 	bTeams = ["New Orleans", "Atlanta", "Pittsburgh", "New England", "Dallas", "Oakland", "Tennessee", "Kansas City", "Tampa Bay", "LA Chargers", "LA Rams", "Philadelphia", "Jacksonville", "Cleveland", "Minnesota", "Buffalo"]
 	sTeams = ["Carolina", "Arizona", "Seattle", "NY Giants", "Denver", "Chicago", "Green Bay", "San Francisco", "Cincinnati", "Washington", "Indianapolis", "Baltimore", "Miami", "Houston", "Detroit", "NY Jets"]
 
@@ -22,7 +22,7 @@ def index():
 	if len(tables) == 1:
 		table = tables[0]
 	else:
-		print "[could not locate main table]"
+		print("could not locate main table")
 	rows = table.find_all("tr")
 
 	for thisRow in rows:
