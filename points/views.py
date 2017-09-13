@@ -58,5 +58,5 @@ def index():
     results["Sam"] = sum(sTeams)
 
     print(results)
-    return render_template("index.html", rows=results)
+    return render_template("index.html", rows="hi")
 
