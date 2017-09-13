@@ -12,8 +12,8 @@
 	<p>Testing 1,2,3...</p>
 	
 
-{% for key, value in rows.iteritems() %}
-<p>{{ key }}</p><p>{{ value }}</p>
-{% endfor %}
+
+<p>{{ results|tojson }}</p>
+
 </body>
 </html>
