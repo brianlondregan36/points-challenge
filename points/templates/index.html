@@ -4,20 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Points Challenge</title>
-	<link rel="stylesheet" type="text/css" href=" url_for('static', filename='style.css') "/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 
 
 <body>
-	<p>Testing 1,2,3...</p>
-	
-{% if True %}
-{{ rows["Brian"] }}
-{% endif %}
-
-<script> 
-// code 
-</script>
-
+	<br><br>
+	<p>Brian: {{ rows["Brian"] }}</p>
+	<p>Sam: {{ rows["Sam"] }}</p>
 </body>
 </html>
