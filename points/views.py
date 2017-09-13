@@ -44,7 +44,7 @@ def index():
                 break
         for y in sTeams:
             if y == thisTeamName:
-                sTeams.remove(y)
+                 sTeams.remove(y)
                  sTeams.append(thisTeamPoints)
                  break
 
