@@ -1,7 +1,7 @@
 from points import app
 from flask import Flask, render_template, request, redirect, url_for
 from bs4 import BeautifulSoup
-import urllib2
+from urllib.request import urlopen
 
 
 
@@ -12,7 +12,7 @@ def index():
     sTeams = ["Carolina", "Arizona", "Seattle", "NY Giants", "Denver", "Chicago", "Green Bay", "San Francisco", "Cincinnati", "Washington", "Indianapolis", "Baltimore", "Miami", "Houston", "Detroit", "NY Jets"]
 
     url = "http://www.espn.com/nfl/statistics/team/_/stat/total/year/2017"
-    page = urllib2.urlopen(url)
+    page = urlopen(url)
     soup = BeautifulSoup(page.read())
 
 
