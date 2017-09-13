@@ -39,6 +39,7 @@ def index():
 		for x in bTeams:
  			if x == thisTeamName:
 				bTeams.remove(x)
+
 				bTeams.append(thisTeamPoints)
 				break
 		for y in sTeams:
