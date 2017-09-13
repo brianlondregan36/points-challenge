@@ -7,7 +7,7 @@ import urllib2
 
 @app.route('/')
 def index():
-
+	return render_template("index.html")
 	bTeams = ["New Orleans", "Atlanta", "Pittsburgh", "New England", "Dallas", "Oakland", "Tennessee", "Kansas City", "Tampa Bay", "LA Chargers", "LA Rams", "Philadelphia", "Jacksonville", "Cleveland", "Minnesota", "Buffalo"]
 	sTeams = ["Carolina", "Arizona", "Seattle", "NY Giants", "Denver", "Chicago", "Green Bay", "San Francisco", "Cincinnati", "Washington", "Indianapolis", "Baltimore", "Miami", "Houston", "Detroit", "NY Jets"]
 
