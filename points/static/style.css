@@ -1,5 +1,30 @@
 
 body { 
-  margin: auto; 
+  margin: 4px; 
+}
+div.message {
+    margin-top: 14px; 
+}
+div.message p {
+    font-family: "Verdana"; 
+    font-size: 1.8em; 
+}
+div.score {
+    position: fixed; 
+    left: 0px; 
+    width: 100%; 
+    height: 10%; 
+    font-family: "Lucida Console"; 
+    font-size: 1.2em;  
 }
 
+div.score p:nth-child(1) {
+    color: #80AAFF;
+}
+div.score p:nth-child(2) {
+    color: #FF9966; 
+}
+
+div.score p span {
+  font-weight: bold;
+}

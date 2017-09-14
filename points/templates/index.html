@@ -5,12 +5,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Points Challenge</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+	<script>
+		function printMessage() {
+			var b = {{ rows["Brian"] }}; 
+			var s = {{ rows["Sam"] }}; 
+			var div = document.getElementById("message"); 
+			if( b > s) {
+				div.innerHTML = "<p>LOOKS LIKE SAM IS BUYING</p>";
+			}
+			else if(b < s) {
+				div.innerHTML = "<p>LOOKS LIKE BRIAN IS BUYING</p>";
+			}
+			else if(b == s) {
+				div.innerHTML = "<p>LOOKS LIKE WE'RE SPLITTING THE CHECK</p>";
+			}
+			else() {
+				div.innerHTML = "<p>oh no, something went wrong</p>";
+			}
+		}
+	</script>
 </head>
 
 
-<body>
-	<br><br>
-	<p>Brian: {{ rows["Brian"] }}</p>
-	<p>Sam: {{ rows["Sam"] }}</p>
+<body onload="printMessage()">
+	<div class="message"></div>
+	<div class="score">
+		<p>Brian has <span>{{ rows["Brian"] }}</span> combined points.</p>
+		<p>Sam has <span>{{ rows["Sam"] }}</span> combined points.</p>
+	</div>
 </body>
 </html>
