@@ -9,7 +9,7 @@
 		function printMessage() {
 			var b = {{ rows["Brian"] }}; 
 			var s = {{ rows["Sam"] }}; 
-			var div = document.getElementById("message"); 
+			var div = document.getElementsByClassName("message")[0]; 
 			if( b > s) {
 				div.innerHTML = "<p>LOOKS LIKE SAM IS BUYING</p>";
 			}
