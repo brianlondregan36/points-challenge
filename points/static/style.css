@@ -2,16 +2,23 @@
 body { 
   margin: 4px; 
 }
+
+span.b { color: #647899; }
+span.s { color: #D68073; }
+
 div.message {
     width: 100%; 
     margin-top: 14px; 
 }
+
 div.message p {
     padding-left: 8px;
+    padding-right:8px;
+    text-indent: 26px; 
     font-family: "Georgia"; 
     font-size: 3.0em; 
-    text-indent: 26px; 
 }
+
 div.score {
     position: fixed; 
     left: 0px; 
@@ -29,10 +36,6 @@ div.score p:nth-child(1) {
 div.score p:nth-child(2) {
     color: #d68073; 
 }
-
-span.b { color: #647899; }
-span.s { color: #D68073; }
-
 
 div.score p span {
   font-weight: bold;
