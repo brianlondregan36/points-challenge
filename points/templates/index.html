@@ -14,7 +14,7 @@
 			var bMessages = ['<p>looks like <span class="b">Brian</span> is buying</p>', '<p><span class="b">Brian</span> will be picking up the check</p>', '<p>no free steak for <span class="b">Brian</span> tonight</p>']; 
 			var sMessages = ['<p>looks like <span class="s">Sam</span> is buying</p>', '<p><span class="s">Sam</span> will be picking up the check</p>', '<p>no free steak for <span class="s">Sam</span> tonight</p>']; 
 
-			var random = Math.floor(Math.random() * (bMessages.length - 0 + 1) + 0;  
+			var random = Math.floor(Math.random() * bMessages.length);  
 			if( b > s) {
 				div.innerHTML = sMessages[random];
 			}
