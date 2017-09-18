@@ -48,11 +48,6 @@ def index():
                  sTeams.append(thisTeamPoints)
                  break
 
-    '''remove this after week 2'''
-    bTeams.remove(bTeams[0])
-    sTeams.remove(sTeams[0])
-    '''remove this after week 2'''
-
     results = {}
     results["Brian"] = sum(bTeams)
     results["Sam"] = sum(sTeams)

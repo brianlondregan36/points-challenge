@@ -11,10 +11,10 @@
 			var s = {{ rows["Sam"] }}; 
 			var div = document.getElementsByClassName("message")[0]; 
 			if( b > s) {
-				div.innerHTML = "<p>LOOKS LIKE SAM IS BUYING</p>";
+				div.innerHTML = "<p>looks like <span class="s">Sam</span> is buying dinner</p>";
 			}
 			else if(b < s) {
-				div.innerHTML = "<p>LOOKS LIKE BRIAN IS BUYING</p>";
+				div.innerHTML = "<p>looks like <span class="b">Brian</span> is buying dinner</p>";
 			}
 			else if(b == s) {
 				div.innerHTML = "<p>LOOKS LIKE WE'RE SPLITTING THE CHECK</p>";
@@ -30,8 +30,8 @@
 <body onload="printMessage()">
 	<div class="message"></div>
 	<div class="score">
-		<p>Brian has <span>{{ rows["Brian"] }}</span> combined points.</p>
-		<p>Sam has <span>{{ rows["Sam"] }}</span> combined points.</p>
+		<p>Brian has <span class="b">{{ rows["Brian"] }}</span> combined points.</p>
+		<p>Sam has <span class="s">{{ rows["Sam"] }}</span> combined points.</p>
 	</div>
 </body>
 </html>
