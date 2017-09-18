@@ -11,13 +11,13 @@
 			var s = {{ rows["Sam"] }}; 
 			var div = document.getElementsByClassName("message")[0]; 
 			if( b > s) {
-				div.innerHTML = "<p>looks like <span class="s">Sam</span> is buying dinner</p>";
+				div.innerHTML = '<p>looks like <span class="s">Sam</span> is buying dinner</p>';
 			}
 			else if(b < s) {
-				div.innerHTML = "<p>looks like <span class="b">Brian</span> is buying dinner</p>";
+				div.innerHTML = '<p>looks like <span class="b">Brian</span> is buying dinner</p>';
 			}
 			else if(b == s) {
-				div.innerHTML = "<p>LOOKS LIKE WE'RE SPLITTING THE CHECK</p>";
+				div.innerHTML = "<p>looks like we're spliting the check</p>";
 			}
 			else {
 				div.innerHTML = "<p>oh no, something went wrong</p>";
