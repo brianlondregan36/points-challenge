@@ -25,7 +25,9 @@ div.difference {
     bottom: 0px; 
     padding-right: 2%;
     padding-bottom: 2%;
+    font-family: "Georgia";
     font-size: 1.1em; 
+    font-weight: bold; 
 }
 
 div.score {

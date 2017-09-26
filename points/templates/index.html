@@ -18,11 +18,11 @@
 			var random = Math.floor(Math.random() * bMessages.length);  
 			if( b > s) {
 				divA.innerHTML = sMessages[random];
-				divB.innerHTML = "<p>difference is " + (b - s) + "</p>"; 
+				divB.innerHTML = "<p>-" + (b - s) + "</p>"; 
 			}
 			else if(b < s) {
 				divA.innerHTML = bMessages[random];
-				divB.innerHTML = "<p>difference is " + (s - b) + "</p>";
+				divB.innerHTML = "<p>-" + (s - b) + "</p>";
 			}
 			else if(b == s) {
 				divA.innerHTML = "<p>looks like we're spliting the check</p>";
