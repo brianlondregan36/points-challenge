@@ -10,22 +10,25 @@
 		function printMessage() {
 			var b = {{ rows["Brian"] }};
 			var s = {{ rows["Sam"] }};
-			var div = document.getElementsByClassName("message")[0]; 
+			var divA = document.getElementsByClassName("message")[0]; 
+			var divB = document.getElementsByClassName("difference")[0];
 			var bMessages = ['<p>looks like <span class="b">Brian</span> is buying</p>', '<p><span class="b">Brian</span> will be picking up the check</p>', '<p>no free steak for <span class="b">Brian</span> tonight</p>']; 
 			var sMessages = ['<p>looks like <span class="s">Sam</span> is buying</p>', '<p><span class="s">Sam</span> will be picking up the check</p>', '<p>no free steak for <span class="s">Sam</span> tonight</p>']; 
 
 			var random = Math.floor(Math.random() * bMessages.length);  
 			if( b > s) {
-				div.innerHTML = sMessages[random];
+				divA.innerHTML = sMessages[random];
+				divB.innerHTML = "<p>difference is " + (b - s) + "</p>"; 
 			}
 			else if(b < s) {
-				div.innerHTML = bMessages[random];
+				divA.innerHTML = bMessages[random];
+				divB.innerHTML = "<p>difference is " + (s - b) + "</p>";
 			}
 			else if(b == s) {
-				div.innerHTML = "<p>looks like we're spliting the check</p>";
+				divA.innerHTML = "<p>looks like we're spliting the check</p>";
 			}
 			else {
-				div.innerHTML = "<p>oh no, something went wrong</p>";
+				divA.innerHTML = "<p>oh no, something went wrong</p>";
 			}
 		}
 	</script>
@@ -34,6 +37,7 @@
 
 <body onload="printMessage()">
 	<div class="message"></div>
+	<div class="difference"></div>
 	<div class="score">
 		<p>Brian has <span class="b">{{ rows["Brian"] }}</span> combined points.</p>
 		<p>Sam has <span class="s">{{ rows["Sam"] }}</span> combined points.</p>

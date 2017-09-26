@@ -19,6 +19,15 @@ div.message p {
     font-size: 3.0em; 
 }
 
+div.difference {
+    position: fixed; 
+    right: 0px; 
+    bottom: 0px; 
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: 1.1em; 
+}
+
 div.score {
     position: fixed; 
     left: 0px; 
