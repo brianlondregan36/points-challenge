@@ -26,15 +26,14 @@ div.difference {
     padding-right: 2%;
     padding-bottom: 2%;
     font-family: "Georgia";
-    font-size: 1.1em; 
-    font-weight: bold; 
+    font-size: 1.2em; 
 }
 
 div.score {
     position: fixed; 
     left: 0px; 
     bottom: 0px;
-    width: 100%; 
+    width: 88%; 
     padding-left: 2%;
     padding-bottom: 2%; 
     font-family: "Lucida Console"; 
